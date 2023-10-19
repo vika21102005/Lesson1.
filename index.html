@@ -1,13 +1,24 @@
-Program DZ6;
-var x,a,b,c:integer;
-z:string;
-begin
-Writeln('Введите трёхзначное число a');
-readln(x);
-a:=x div 10;
-b:=x mod 10;
-c:=b*100+a;
-z:='0'+a;
-If (b=0) then writeln ('Перестановленное местами =',z)
-else Writeln ('Перестановленное местами =',c);
-end.
+#include <iostream>
+    #include <cmath>
+    #include <Windows.h>
+    
+    using namespace std;
+    
+    int main()
+    {
+        SetConsoleOutputCP(1251);
+        int d;
+        float a;
+        double c, res;
+        cout << "Введiть число с: ";
+        cin >> c;
+        cout << "Змінна с дорівнює: " << c << "\nВведiть число d: ";
+        cin >> d;
+        cout << "Змінна d дорівнює: " << d << "\nВведiть число a: ";
+        cin >> a;
+        cout << "Змінна a дорівнює: " << a << "\n ";
+    
+        res = (tan(c) - 23 * d) / (2 * a - 1);
+        cout << "Result=" << res;
+        return 0;
+    }
