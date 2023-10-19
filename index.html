@@ -1,1 +1,13 @@
-! + Tab/enter
+Program DZ6;
+var x,a,b,c:integer;
+z:string;
+begin
+Writeln('Введите трёхзначное число a');
+readln(x);
+a:=x div 10;
+b:=x mod 10;
+c:=b*100+a;
+z:='0'+a;
+If (b=0) then writeln ('Перестановленное местами =',z)
+else Writeln ('Перестановленное местами =',c);
+end.
